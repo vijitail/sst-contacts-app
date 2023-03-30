@@ -1,0 +1,29 @@
+{
+  "name": "contacts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/uuid": "^9.0.1",
+    "aws-cdk-lib": "2.62.2",
+    "constructs": "10.1.156",
+    "sst": "^2.2.8",
+    "typescript": "^5.0.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "uuid": "^9.0.0"
+  }
+}
